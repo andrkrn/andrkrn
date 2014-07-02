@@ -1,13 +1,11 @@
 class Api::V1::SessionsController < Api::V1::ApplicationController
 
   def create
-    puts permitted_params
-    user = User.where(email: params[:user][:email])
-    
-  end
-
-  private
-    def permitted_params
-      params[:user].permit(:email, :password)
+    user = User.where(email: params[:user][:email]).first
+    if user && user.authenticate(params[:user][:password])
+      render json: user.session_api_key, status: 201
+    else
+      render json: {}, status: 401
     end
+  end
 end

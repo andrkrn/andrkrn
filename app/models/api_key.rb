@@ -2,6 +2,8 @@ class ApiKey < ActiveRecord::Base
   belongs_to :user
 
   validates :scope, inclusion: { in: %w( session api ) }
+  validates :access_token, uniqueness: true
+  validates :user_id, presence: true
   
   before_create :generate_access_token, :set_expiry_date
   
@@ -16,8 +18,8 @@ class ApiKey < ActiveRecord::Base
 
     def generate_access_token
       begin
-        self.access_token == SecureRandom.hex
-      end while self.class.exists?(access_token: access_token)
+        self.access_token = SecureRandom.hex
+      end while self.class.where(access_token: access_token).exists?
     end
 
 end

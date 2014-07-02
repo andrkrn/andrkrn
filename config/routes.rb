@@ -15,6 +15,7 @@ Kurkur::Application.routes.draw do
   namespace :api, defaults: {format: 'json'}, constraints: RestrictFormat.new(:json) do
     scope module: :v1, constraints: ApiConstraints.new(version: 1, default: true) do
       resources :articles
+      resources :users, only: [:create]
       resources :sessions, only: [:create, :destroy]
     end
     match '*path' => 'errors#not_found', via: [:get, :post, :put, :patch, :delete]
