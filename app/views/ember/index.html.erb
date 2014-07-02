@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>Ember Page | @andrkrn</title>
+    <meta data-url="<%= "#{request.protocol.gsub("http:", "https:")}#{request.host_with_port}" %>">
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= csrf_meta_tags %>
+  </head>
+    <body data-scroll-speed="1000">
+    <!-- Scripts -->
+    <%= javascript_include_tag "application" %>
+  </body>
+</html>
+

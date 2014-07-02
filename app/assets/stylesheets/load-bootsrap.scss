@@ -1,0 +1,39 @@
+@import "bootstrap";
+
+.form-control {
+  border-radius: 0;
+  border-color: #a7a7a7;
+}
+
+.alert {
+  border-radius: 0;
+  padding: 10px 15px;
+}
+
+.btn-blue {
+  background-color: #49a2df;
+  color: #FFF;
+  border: none;
+  border-radius: 0;
+  padding: 7px 15px;
+  transition: 0.2s all;
+  outline: none;
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+  outline: none;
+  background-color: #2980b9;
+  color: #FFF;
+  transition: 0.2s all;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #343434
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  .icon-bar {
+    background-color: #fff
+  }
+}

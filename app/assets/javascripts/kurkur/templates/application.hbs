@@ -1,0 +1,44 @@
+<header id="header">
+  <nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        {{link-to '@andrkrn' 'index' class="navbar-brand"}}
+      </div>
+      <div class="collapse navbar-collapse main-navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>{{link-to 'Articles' 'articles'}}</li>
+          <li>{{link-to 'Curriculum Vitae' 'curriculum_vitae'}}</li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+{{outlet}}
+
+<footer class="footer">
+  <div class="container">
+    <div class="site-name pull-left"><i class="fa fa-smile-o fa-rotate-15 fa-fw"></i>Andri Kurnia</div>
+  </div>
+</footer>
+
+<script type="text/javascript">
+  // Set options
+  var options = {
+      offset: '.page-header-2',
+      classes: {
+          clone:   'banner--clone',
+          stick:   'banner--stick',
+          unstick: 'banner--unstick'
+      }
+  };
+  // Initialise with options
+  var banner = new Headhesive('#header', options);
+</script>
