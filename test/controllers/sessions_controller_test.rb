@@ -1,10 +1,11 @@
 require 'test_helper'
 
 class SessionsControllerTest < ActionController::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
 
+  setup do
+    @controller = Api::V1::SessionsController.new
+  end
+  
   test "authenticate with email" do
     pw = 'secret'
     larry = User.create!(email: 'larry@example.com', full_name: 'Larry Moulders', password: pw, password_confirmation: pw)
@@ -17,7 +18,7 @@ class SessionsControllerTest < ActionController::TestCase
   test "authenticate with invalid info" do
     pw = 'secret'
     larry = User.create!(email: 'larry@example.com', full_name: 'Larry Moulders', password: pw, password_confirmation: pw)
-    post 'create', { email: larry.email, password: 'huh' }
+    post 'create', { user: {email: larry.email, password: 'huh' } }
     assert response.status == 401
   end
 end

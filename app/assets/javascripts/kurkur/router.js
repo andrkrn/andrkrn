@@ -12,6 +12,7 @@ Kurkur.Router.map(function() {
   this.route('curriculum_vitae', {path: 'curriculum-vitae'});
   // Articles
   this.resource('articles');
+  this.resource('article', {path: 'article/:article_id'});
   // 404 Not Found
   this.route("fourOhFour", { path: "*path"});
 });

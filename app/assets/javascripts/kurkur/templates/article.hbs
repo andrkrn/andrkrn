@@ -1,19 +1,17 @@
-<div class="page-header-2">
-  <div class="container text-center">
-    <h1>Articles</h1>
+{{#with content}}
+  <div class="page-header-2">
+    <div class="container text-center">
+      <h1>{{title}}</h1>
+    </div>
   </div>
-</div>
 
-{{#each model}}
   <div class="container pt-20">
     <article class="post">
       <div class="post-number">
         <div class="number">{{id}}</div>
       </div>
       <div class="post-title">
-        {{#link-to 'article' this}}
-          <h2>{{title}}</h2>
-        {{/link-to}}
+        <h2>{{title}}</h2>
       </div>
       <div class="clearfix"></div>
       <div class="post-content">
@@ -21,4 +19,4 @@
       </div>
     </article>
   </div>
-{{/each}}
+{{/with}}

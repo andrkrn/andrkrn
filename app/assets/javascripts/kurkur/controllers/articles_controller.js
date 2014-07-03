@@ -1,3 +1,3 @@
-Kurkur.ArticleController = Ember.ArrayController.extend({
-  content: null
+Kurkur.ArticlesController = Ember.ArrayController.extend({
+
 });

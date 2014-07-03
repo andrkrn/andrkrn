@@ -1,4 +1,4 @@
 class ApiKeySerializer < ActiveModel::Serializer
-  attributes :id, :access_token, :scope, :expired_at, :created_at
-  has_one :user
+  attributes :id, :access_token
+  has_one :user, embed: :id
 end
