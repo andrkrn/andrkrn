@@ -13,7 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
-//= require jquery
+//= require jquery.scrollTo
 //= require handlebars
 //= require ember
 //= require ember-data

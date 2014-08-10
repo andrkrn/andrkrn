@@ -7,6 +7,7 @@ gem 'rails-api', '~> 0.2.0'
 gem "active_model_serializers"
 gem 'bootstrap-sass', '~> 3.1.1'
 gem 'font-awesome-sass'
+gem "jquery-scrollto-rails"
 gem 'jquery-rails'
 gem 'bcrypt-ruby', '~> 3.1.2'
 # gem 'devise'
