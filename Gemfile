@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'sqlite3'
-
 gem 'rails', '4.1.0'
 gem 'rails-api', '~> 0.2.0'
 gem "active_model_serializers"
@@ -15,7 +13,6 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 
 # Ember
 gem 'ember-rails'
@@ -28,12 +25,19 @@ group :assets do
 end
 
 group :development do
+  gem 'sqlite3'
+  gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
   gem 'pry-rails'
-  gem 'debugger'
+  # gem 'debugger'
   gem 'awesome_print'
   gem 'quiet_assets'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'meta_request'
   gem 'hirb-unicode'
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
 end
