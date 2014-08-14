@@ -96,6 +96,7 @@ GEM
     mime-types (1.25.1)
     minitest (5.3.5)
     multi_json (1.10.1)
+    newrelic_rpm (3.9.1.236)
     pg (0.17.1)
     pg (0.17.1-x64-mingw32)
     polyglot (0.3.5)
@@ -200,6 +201,7 @@ DEPENDENCIES
   jquery-rails
   jquery-scrollto-rails
   meta_request
+  newrelic_rpm
   pg
   pry-rails
   quiet_assets
