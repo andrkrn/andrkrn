@@ -21,6 +21,8 @@ gem 'ember-rails'
 gem 'ember-source', '1.5.0'
 gem 'handlebars-source', '~> 1.3.0'
 
+gem 'newrelic_rpm'
+
 group :assets do
   gem 'sass-rails', '4.0.3'
   gem 'uglifier', '>= 1.3.0'
@@ -40,7 +42,6 @@ group :development do
 end
 
 group :production do
-  gem 'newrelic_rpm'
   gem 'pg'
   gem 'rails_12factor'
 end
