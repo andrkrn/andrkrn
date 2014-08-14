@@ -1,0 +1,25 @@
+{
+  "name": "andrkrn",
+  "version": "0.0.1",
+  "authors": [
+    "Andri Kurnia <andrikurnia@live.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "vendor/assets/components"
+  ],
+  "description": "Personal Website Project",
+  "keywords": [
+    "Personal",
+    "Website",
+    "Andri",
+    "Kurnia",
+    "andrkrn"
+  ],
+  "homepage": "www.andrikurnia.com"
+}
