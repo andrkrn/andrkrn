@@ -81,7 +81,10 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-    # Ember
+  # Ember
   config.ember.variant = :production
   config.handlebars.templates_root = 'kurkur/templates'
+
+  # Pretender.io
+  config.middleware.use Rack::Prerender, prerender_token: 'DD4KUhYvY2hOO5RDzpaH'
 end

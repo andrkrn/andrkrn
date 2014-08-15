@@ -21,7 +21,7 @@ gem 'ember-rails'
 gem 'ember-source', '1.5.0'
 gem 'handlebars-source', '~> 1.3.0'
 
-gem 'newrelic_rpm'
+gem 'prerender_rails'
 
 group :assets do
   gem 'sass-rails', '4.0.3'
