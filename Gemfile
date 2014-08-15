@@ -4,6 +4,7 @@ ruby '2.1.2'
 
 gem 'rails', '4.1.0'
 gem 'rails-api', '~> 0.2.0'
+gem 'pg'
 gem "active_model_serializers"
 gem 'bootstrap-sass', '~> 3.1.1'
 gem 'font-awesome-sass'
@@ -29,7 +30,7 @@ group :assets do
 end
 
 group :development do
-  gem 'sqlite3'
+  # gem 'sqlite3'
   gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
   gem 'pry-rails'
   # gem 'debugger'
@@ -42,6 +43,7 @@ group :development do
 end
 
 group :production do
-  gem 'pg'
+  # gem 'pg'
   gem 'rails_12factor'
+  gem 'therubyracer'
 end
