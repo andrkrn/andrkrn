@@ -21,6 +21,9 @@ Kurkur::Application.routes.draw do
     match '*path' => 'errors#not_found', via: [:get, :post, :put, :patch, :delete]
   end
 
+  # ADMIN PANEL
+  get 'admin/index'
+
   # TO EMBER APP
   get '*path', to: 'ember#index', constraints: RestrictFormat.new(:html)
   root to: 'ember#index', constraints: RestrictFormat.new(:html)

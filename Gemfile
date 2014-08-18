@@ -11,6 +11,7 @@ gem 'font-awesome-sass'
 gem "jquery-scrollto-rails"
 gem 'jquery-rails'
 gem 'bcrypt-ruby', '~> 3.1.2'
+gem 'slim'
 # gem 'devise'
 
 gem 'jbuilder', '~> 2.0'
@@ -19,7 +20,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Ember
 gem 'ember-rails'
-gem 'ember-source', '1.5.0'
+gem 'ember-source', '~> 1.6.1'
 gem 'handlebars-source', '~> 1.3.0'
 
 gem 'prerender_rails'
