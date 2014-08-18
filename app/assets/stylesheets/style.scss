@@ -356,3 +356,21 @@ ul.personal-info ul.location {
 
 @media (min-width: 992px) { 
 }
+
+// 404
+.error404 {
+  .head {
+    font-family: 'open sans';
+    font-size: 112pt;
+    font-weight: bolder;
+  }
+
+  .text-error {
+    font-size: 30px;
+    color: #c7254e;
+  }
+
+  .subhead {
+    font-family: 'open sans';
+  }
+}

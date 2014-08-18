@@ -1,5 +1,6 @@
 // for more details see: http://emberjs.com/guides/application/
 Kurkur = Ember.Application.create({
+  currentPath: '',
   LOG_TRANSITIONS_INTERNAL: true
 });
 

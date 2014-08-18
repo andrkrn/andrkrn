@@ -1,1 +1,3 @@
-Kurkur.ApplicationRoute = Ember.Route.extend({});
+Kurkur.ApplicationRoute = Ember.Route.extend({
+
+});
