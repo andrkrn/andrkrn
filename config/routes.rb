@@ -23,7 +23,8 @@ Kurkur::Application.routes.draw do
 
   # TO EMBER APP
   get '*path', to: 'ember#index', constraints: RestrictFormat.new(:html)
-  root :to => redirect('/andrkrn'), constraints: RestrictFormat.new(:html)
+  root to: 'ember#index', constraints: RestrictFormat.new(:html)
+  # root :to => redirect('/andrkrn'), constraints: RestrictFormat.new(:html)
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
