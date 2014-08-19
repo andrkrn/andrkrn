@@ -7,9 +7,10 @@
     <meta data-url="<%= "#{request.protocol.gsub("http:", "https:")}#{request.host_with_port}" %>">
     <!-- Remove Tap Highlight on Windows Phone IE -->
     <meta name="msapplication-tap-highlight" content="no"/> 
+    <meta content="!" name="fragment" />
     
     <title>Andri Kurnia</title>
-    <meta name="description" content="Andri Kurnia Akbaludin, Personal Website, Portofolio" />
+    <meta content="Andri Kurnia Akbaludin, Personal Website, Portofolio" name="description" />
 
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= csrf_meta_tags %>
