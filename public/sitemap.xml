@@ -5,7 +5,7 @@
   <url>
     <loc>http://www.andrikurnia.com</loc>
     <lastmod>2014-08-15</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
@@ -17,7 +17,7 @@
   <url>
     <loc>http://www.andrikurnia.com/curriculum-vitae</loc>
     <lastmod>2014-08-15</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
 </urlset>
