@@ -86,7 +86,7 @@ Rails.application.configure do
   config.handlebars.templates_root = 'kurkur/templates'
 
   # Pretender.io
-  config.middleware.use Rack::Prerender, prerender_token: 'DD4KUhYvY2hOO5RDzpaH'
+  # config.middleware.use Rack::Prerender, prerender_token: 'DD4KUhYvY2hOO5RDzpaH'
 
   # Heroku Static Image
   config.serve_static_assets = true
