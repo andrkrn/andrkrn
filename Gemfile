@@ -23,7 +23,8 @@ gem 'ember-rails'
 gem 'ember-source', '~> 1.6.1'
 gem 'handlebars-source', '~> 1.3.0'
 
-gem 'prerender_rails'
+# gem 'prerender_rails'
+gem 'seojs'
 
 group :assets do
   gem 'sass-rails', '4.0.3'
