@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
-# ruby '2.1.2'
+ruby '2.1.2'
 
 gem 'rails', '4.1.0'
 gem 'rails-api', '~> 0.2.0'
-# gem 'pg'
+gem 'pg'
 gem "active_model_serializers" , "~> 0.8.1"
 gem 'bootstrap-sass', '~> 3.1.1'
 gem 'font-awesome-sass'
