@@ -8,6 +8,7 @@ Kurkur.ArticlesRoute = Ember.Route.extend(Kurkur.SeoMixin, {
   },
   
   model: function() {
+    console.log(this.store.find('article'))
     return this.store.find('article');
   }
 });

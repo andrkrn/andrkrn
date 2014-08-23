@@ -41,9 +41,10 @@ GEM
       bcrypt (>= 3.1.3)
     bcrypt-ruby (3.1.5-x64-mingw32)
       bcrypt (>= 3.1.3)
-    better_errors (1.1.0)
+    better_errors (2.0.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
+      rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bootstrap-sass (3.1.1.1)
@@ -52,7 +53,7 @@ GEM
     callsite (0.0.11)
     coderay (1.1.0)
     debug_inspector (0.0.2)
-    ember-data-source (1.0.0.beta.8)
+    ember-data-source (1.0.0.beta.9)
       ember-source
     ember-rails (0.15.0)
       active_model_serializers
@@ -85,7 +86,6 @@ GEM
     jquery-scrollto-rails (1.4.3)
       railties (> 3.1, < 5.0)
     json (1.8.1)
-    libv8 (3.16.14.3)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -97,8 +97,6 @@ GEM
     mime-types (1.25.1)
     minitest (5.4.0)
     multi_json (1.10.1)
-    pg (0.17.1)
-    pg (0.17.1-x64-mingw32)
     polyglot (0.3.5)
     prerender_rails (1.0.4)
       rack
@@ -133,11 +131,6 @@ GEM
     rails-api (0.2.1)
       actionpack (>= 3.2.11)
       railties (>= 3.2.11)
-    rails_12factor (0.0.2)
-      rails_serve_static_assets
-      rails_stdout_logging
-    rails_serve_static_assets (0.0.2)
-    rails_stdout_logging (0.0.3)
     railties (4.1.0)
       actionpack (= 4.1.0)
       activesupport (= 4.1.0)
@@ -146,7 +139,6 @@ GEM
     rake (10.3.2)
     rdoc (4.1.1)
       json (~> 1.4)
-    ref (1.0.5)
     sass (3.2.19)
     sass-rails (4.0.3)
       railties (>= 4.0.0, < 5.0)
@@ -169,10 +161,9 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
+    sqlite3 (1.3.9)
+    sqlite3 (1.3.9-x64-mingw32)
     temple (0.6.8)
-    therubyracer (0.12.1)
-      libv8 (~> 3.16.14.0)
-      ref
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
@@ -190,11 +181,10 @@ GEM
     win32console (1.3.2)
 
 PLATFORMS
-  ruby
   x64-mingw32
 
 DEPENDENCIES
-  active_model_serializers
+  active_model_serializers (~> 0.8.1)
   awesome_print
   bcrypt-ruby (~> 3.1.2)
   better_errors
@@ -209,16 +199,14 @@ DEPENDENCIES
   jquery-rails
   jquery-scrollto-rails
   meta_request
-  pg
   prerender_rails
   pry-rails
   quiet_assets
   rails (= 4.1.0)
   rails-api (~> 0.2.0)
-  rails_12factor
   sass-rails (= 4.0.3)
   sdoc (~> 0.4.0)
   slim
-  therubyracer
+  sqlite3
   tzinfo-data
   uglifier (>= 1.3.0)

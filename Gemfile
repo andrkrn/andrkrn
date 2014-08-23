@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
-ruby '2.1.2'
+# ruby '2.1.2'
 
 gem 'rails', '4.1.0'
 gem 'rails-api', '~> 0.2.0'
-gem 'pg'
-gem "active_model_serializers"
+# gem 'pg'
+gem "active_model_serializers" , "~> 0.8.1"
 gem 'bootstrap-sass', '~> 3.1.1'
 gem 'font-awesome-sass'
 gem "jquery-scrollto-rails"
@@ -23,8 +23,8 @@ gem 'ember-rails'
 gem 'ember-source', '~> 1.6.1'
 gem 'handlebars-source', '~> 1.3.0'
 
-# gem 'prerender_rails'
-gem 'seojs'
+gem 'prerender_rails'
+# gem 'seojs'
 
 group :assets do
   gem 'sass-rails', '4.0.3'
@@ -32,7 +32,7 @@ group :assets do
 end
 
 group :development do
-  # gem 'sqlite3'
+  gem 'sqlite3'
   gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
   gem 'pry-rails'
   # gem 'debugger'
@@ -46,6 +46,6 @@ end
 
 group :production do
   # gem 'pg'
-  gem 'rails_12factor'
-  gem 'therubyracer'
+  # gem 'rails_12factor'
+  # gem 'therubyracer'
 end

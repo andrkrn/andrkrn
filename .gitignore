@@ -17,3 +17,6 @@
 
 # .gitignore
 /vendor/assets/components
+
+# Local database
+/config/database.yml

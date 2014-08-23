@@ -25,7 +25,7 @@ Kurkur::Application.routes.draw do
   get 'admin/index'
 
   # TO EMBER APP
-  get '*path', to: 'ember#index', constraints: RestrictFormat.new(:html)
+  get '/*path', to: 'ember#index', constraints: RestrictFormat.new(:html)
   root to: 'ember#index', constraints: RestrictFormat.new(:html)
   # root :to => redirect('/andrkrn'), constraints: RestrictFormat.new(:html)
   

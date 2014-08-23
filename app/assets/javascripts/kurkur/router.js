@@ -18,6 +18,5 @@ Kurkur.Router.map(function() {
 });
 
 Kurkur.Router.reopen({
-  rootURL: '/',
   location: 'history'
 });
