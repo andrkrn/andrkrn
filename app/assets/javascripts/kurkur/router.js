@@ -9,12 +9,12 @@ Kurkur.Router.map(function() {
     this.route('new');
   });
   // CV
-  this.route('curriculum_vitae', {path: 'curriculum-vitae'});
+  this.route('curriculum_vitae', {path: '/cv'});
   // Articles
-  this.resource('articles', {path: 'blog'});
-  this.resource('article', {path: 'blog/:article_id'});
+  this.resource('articles', {path: '/blog'});
+  this.resource('article', {path: '/blog/:article_id'});
   // 404 Not Found
-  this.route("fourOhFour", { path: "*path"});
+  this.route("fourOhFour", { path: "/*path"});
 });
 
 Kurkur.Router.reopen({
