@@ -2,7 +2,7 @@
 
 Kurkur.Router.map(function() {
   // Root
-  // this.route('index', {path: 'andrkrn'})
+  this.route('index', {path: '/'})
   // Sessions
   this.route('sign_in');
   this.resource('sessions', function() {
