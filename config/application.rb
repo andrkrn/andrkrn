@@ -20,6 +20,12 @@ module Kurkur
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
+    # Enable asset pipeline
+    config.assets.enabled = true
+
+    # Enable escaping HTML in JSON.
+    config.active_support.escape_html_entities_in_json = true
+
     # include Bower components in compiled assets
     config.assets.paths << Rails.root.join('vendor', 'assets', 'components')
   end
