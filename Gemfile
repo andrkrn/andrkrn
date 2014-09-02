@@ -25,7 +25,7 @@ gem 'handlebars-source', '~> 1.3.0'
 
 # SEO
 gem 'prerender_rails'
-gem 'seojs'
+# gem 'seojs'
 
 # Server
 gem 'passenger'
@@ -51,5 +51,4 @@ end
 group :production do
   gem 'rails_12factor'
   gem 'therubyracer'
-  gem 'unicorn'
 end
