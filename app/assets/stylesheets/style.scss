@@ -47,6 +47,16 @@ header {
   transition: all 0.2s;
 }
 
+.navbar-inverse .navbar-toggle .icon-bar,
+.navbar-inverse .navbar-toggle:hover .icon-bar,
+.navbar-inverse .navbar-toggle:focus .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-inverse .navbar-toggle:hover {
+  border-color: #fff;
+}
+
 .page-header {
   margin: 0;
   border-bottom: 1px solid #333;
@@ -78,6 +88,7 @@ footer .site-name {
 .big-cover {
   position: relative;
   min-height: 600px;
+  max-height: 780px;
   height: 80vh;
   background: #0fc3ff; /* Old browsers */
   background: -moz-linear-gradient(-45deg,  #0fc3ff 0%, #6fc9e2 100%); /* FF3.6+ */
@@ -193,23 +204,23 @@ footer .site-name {
 }
 
 .pane-1 {
-  border-bottom-color: #ff4136; 
+  border-bottom-color: #ff4136 !important; 
 }
 
 .pane-2 {
-  border-bottom-color: #0074D9;
+  border-bottom-color: #0074D9 !important;
 }
 
 .pane-3 {
-  border-bottom-color: #2ECC40;
+  border-bottom-color: #2ECC40 !important;
 }
 
 .pane-4 {
-  border-bottom-color: #85144B; 
+  border-bottom-color: #85144B !important; 
 }
 
 .pane-5 {
-  border-bottom-color: #B10DC9;
+  border-bottom-color: #B10DC9 !important;
 }
 
 .pane-header {
@@ -358,6 +369,19 @@ ul.personal-info ul.location {
   padding-top: 5px;
 }
 
+.blog-pane {
+  border-bottom: 2px solid;
+
+  h4 {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    font-family: 'open sans';
+    font-weight: 600;
+    border-bottom: 1px solid #aaa;
+  }
+}
+
 @media (min-width: 992px) { 
 }
 
@@ -377,4 +401,17 @@ ul.personal-info ul.location {
   .subhead {
     font-family: 'open sans';
   }
+}
+
+// Login Form
+h1.login-header {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: 'open sans'
+}
+
+.login {
+  width: 400px;
+  margin: 0px auto;
 }

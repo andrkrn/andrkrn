@@ -1,1 +1,11 @@
-h1 Awyeah
+h1.login-header Admin | Andri Kurnia
+.login
+  = form_tag 'admin/login' do
+    .form-group
+      label Login
+      = text_field_tag :email, '', class: 'form-control'
+    .form-group
+      label Password
+      = password_field_tag :password, '', class: 'form-control'
+    .form-group
+      = submit_tag 'Sign In', class: 'btn btn-default btn-blue'
