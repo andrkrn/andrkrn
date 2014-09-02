@@ -9,12 +9,10 @@
     <div class="col-md-8">
       {{#each controller}}
           <article class="post">
-            <div class="post-number">
-              <div class="number">{{id}}</div>
-            </div>
             <div class="post-title">
               {{#link-to 'article' this}}
                 <h2>{{title}}</h2>
+                <p class="post-details">Posted by Owner on {{created_at}}</p>
               {{/link-to}}
             </div>
             <div class="clearfix"></div>

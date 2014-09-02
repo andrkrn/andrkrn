@@ -323,6 +323,7 @@ ul.personal-info ul.location {
 
 /* Blog */
 .post {
+  color: #222
 }
 
 .post .post-number {
@@ -342,13 +343,16 @@ ul.personal-info ul.location {
 }
 
 .post .post-title {
-  display: inline-block;
-  padding-left: 15px;
+}
+
+.post .post-details {
+  font-style: italic;
+  font-size: 10px;
 }
 
 .post .post-content {
   border-top: 1px solid #aaa;
-  font: normal 150%/1.5 georgia;
+  font: normal 12px 'open sans';
   text-align: justify;
   margin-top: 12px;
   padding-top: 5px;

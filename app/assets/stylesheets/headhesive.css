@@ -28,6 +28,7 @@
         -ms-transform: translateY(-100%);
             transform: translateY(-100%);
 
+    z-index: 99999;
     /* Animations */
     /*-webkit-transition: all 300ms ease-in-out;*/
        /*-moz-transition: all 300ms ease-in-out;*/
