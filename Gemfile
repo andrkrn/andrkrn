@@ -28,7 +28,7 @@ gem 'prerender_rails'
 gem 'seojs'
 
 # Server
-gem 'thin'
+gem 'passenger'
 
 group :assets do
   gem 'sass-rails', '4.0.3'
