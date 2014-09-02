@@ -3,7 +3,7 @@ Kurkur.IndexRoute = Ember.Route.extend(Kurkur.SeoMixin, {
   description: null,
 
   activate: function() {
-    this.set('title', 'Andri Kurnia');
-    this.set('description', 'Andri Kurnia - Personal website and some good article or blog for Web developer, Enginner, and of course my favorite game Dota 2');
+    $(document).attr('title', 'Andri Kurnia');
+    $(document).attr('head meta[name="description"]', 'Andri Kurnia - Personal website and some good article or blog for Web developer, Enginner, and of course my favorite game Dota 2');
   }
 });
