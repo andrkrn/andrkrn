@@ -23,8 +23,12 @@ gem 'ember-rails'
 gem 'ember-source', '~> 1.6.1'
 gem 'handlebars-source', '~> 1.3.0'
 
+# SEO
 gem 'prerender_rails'
 gem 'seojs'
+
+# Server
+gem 'thin'
 
 group :assets do
   gem 'sass-rails', '4.0.3'
