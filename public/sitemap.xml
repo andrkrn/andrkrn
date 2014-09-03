@@ -11,11 +11,11 @@
   <url>
     <loc>http://www.andrikurnia.com/blog</loc>
     <lastmod>2014-08-21</lastmod>
-    <changefreq>hourly</changefreq>
+    <changefreq>always</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>http://www.andrikurnia.com/curriculum-vitae</loc>
+    <loc>http://www.andrikurnia.com/cv</loc>
     <lastmod>2014-08-21</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.80</priority>
