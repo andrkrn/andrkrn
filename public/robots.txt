@@ -4,5 +4,4 @@
 # User-agent: *
 # Disallow: /
 
-User-agent: *
-Disallow: /api/
+Sitemap: http://www.andrikurnia.com/sitemap.xml
