@@ -9,17 +9,33 @@
     <div class="col-md-8">
       {{#each controller}}
           <article class="post">
-            <div class="post-number">
-              <div class="number">{{id}}</div>
-            </div>
             <div class="post-title">
               {{#link-to 'article' this}}
                 <h2>{{title}}</h2>
               {{/link-to}}
             </div>
+            <div class="post-details">
+              Posted by Owner, 2 Sep 2014
+            </div>
             <div class="clearfix"></div>
             <div class="post-content">
               {{content}}
+            </div>
+            <div class="post-footer">
+              <div class="post-footer-items">
+                <div class="col-sm-3">
+                  <div class="number">123</div>Viewed
+                </div>
+                <div class="col-sm-3">
+                  <div class="number">213</div>Likes
+                </div>
+                <div class="col-sm-3">
+                  <div class="number">121</div>Comment
+                </div>
+                <div class="col-sm-3">
+                  <div class="number">234</div>Share
+                </div>
+              </ul>
             </div>
           </article>
       {{/each}}
