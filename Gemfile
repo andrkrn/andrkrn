@@ -24,7 +24,7 @@ gem 'ember-source', '~> 1.6.1'
 gem 'handlebars-source', '~> 1.3.0'
 
 # SEO
-gem 'prerender_rails'
+# gem 'prerender_rails'
 # gem 'seojs'
 
 # Server
