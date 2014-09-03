@@ -102,9 +102,6 @@ GEM
       rake (>= 0.8.1)
     pg (0.17.1)
     polyglot (0.3.5)
-    prerender_rails (1.1.0)
-      activesupport
-      rack
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -206,7 +203,6 @@ DEPENDENCIES
   meta_request
   passenger
   pg
-  prerender_rails
   pry-rails
   quiet_assets
   rails (~> 4.1.0)
