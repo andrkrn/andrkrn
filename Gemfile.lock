@@ -49,7 +49,6 @@ GEM
     builder (3.2.2)
     callsite (0.0.11)
     coderay (1.1.0)
-    daemon_controller (1.2.0)
     debug_inspector (0.0.2)
     ember-data-source (1.0.0.beta.9)
       ember-source
@@ -96,18 +95,19 @@ GEM
     mime-types (1.25.1)
     minitest (5.4.1)
     multi_json (1.10.1)
-    passenger (4.0.50)
-      daemon_controller (>= 1.2.0)
-      rack
-      rake (>= 0.8.1)
     pg (0.17.1)
     polyglot (0.3.5)
+    prerender_rails (1.1.0)
+      activesupport
+      rack
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
     pry-rails (0.3.2)
       pry (>= 0.9.10)
+    puma (2.9.0)
+      rack (>= 1.1, < 2.0)
     quiet_assets (1.0.3)
       railties (>= 3.1, < 5.0)
     rack (1.5.2)
@@ -151,7 +151,6 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
-    seojs (0.0.9)
     slim (2.0.3)
       temple (~> 0.6.6)
       tilt (>= 1.3.3, < 2.1)
@@ -202,16 +201,16 @@ DEPENDENCIES
   jquery-rails
   jquery-scrollto-rails
   meta_request
-  passenger
   pg
+  prerender_rails
   pry-rails
+  puma
   quiet_assets
   rails (~> 4.1.0)
   rails-api (~> 0.2.0)
   rails_12factor
   sass-rails (= 4.0.3)
   sdoc (~> 0.4.0)
-  seojs
   slim
   sqlite3
   therubyracer
