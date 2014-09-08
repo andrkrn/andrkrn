@@ -17,10 +17,10 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require jquery.scrollTo
-//= require handlebars
+//= require_tree ./libs
 //= require ember
 //= require ember-data
-//= require_tree ./libs
+//= require handlebars
 //= require kurkur/kurkur
 //= require_self
 
