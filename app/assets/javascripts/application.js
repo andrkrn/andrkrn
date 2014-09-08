@@ -18,9 +18,9 @@
 //= require bootstrap
 //= require jquery.scrollTo
 //= require_tree ./libs
+//= require handlebars
 //= require ember
 //= require ember-data
-//= require handlebars
 //= require kurkur/kurkur
 //= require_self
 
