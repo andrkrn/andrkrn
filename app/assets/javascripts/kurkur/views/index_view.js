@@ -1,7 +1,7 @@
 Kurkur.IndexView = Ember.View.extend({
 
   didInsertElement: function() {
-    Waves.displayEffect();
+    // Waves.displayEffect();
   },
   
   actions: {
