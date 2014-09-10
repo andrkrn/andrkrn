@@ -1,6 +1,4 @@
-Kurkur.IndexRoute = Ember.Route.extend(Kurkur.SeoMixin, {
-  title: null,
-  description: null,
+Kurkur.IndexRoute = Ember.Route.extend({
 
   activate: function() {
     $(document).attr('title', 'Andri Kurnia');

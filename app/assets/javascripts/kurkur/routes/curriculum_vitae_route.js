@@ -1,6 +1,4 @@
-Kurkur.CurriculumVitaeRoute = Ember.Route.extend(Kurkur.SeoMixin, {
-  title: null,
-  description: null,
+Kurkur.CurriculumVitaeRoute = Ember.Route.extend({
 
   activate: function() {
     $(document).attr('title', 'Curriculum Vitae | Andri Kurnia');

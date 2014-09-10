@@ -1,4 +1,4 @@
-Kurkur.ArticlesRoute = Ember.Route.extend(Kurkur.SeoMixin, {
+Kurkur.ArticlesRoute = Ember.Route.extend({
 
   activate: function() {
     $(document).attr('title', 'Blog | Andri Kurnia');
