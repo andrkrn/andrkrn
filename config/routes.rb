@@ -25,8 +25,9 @@ Kurkur::Application.routes.draw do
   get 'admin/index'
 
   # TO EMBER APP
-  get '/*path', to: 'ember#index', constraints: RestrictFormat.new(:html)
-  root to: 'ember#index', constraints: RestrictFormat.new(:html)
+  # get '/', to: 'ember#index'
+  get '/*path', to: 'ember#index'
+  root to: 'ember#index'
   # root :to => redirect('/andrkrn'), constraints: RestrictFormat.new(:html)
   
   # The priority is based upon order of creation: first created -> highest priority.
