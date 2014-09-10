@@ -1,8 +1,6 @@
 // For more information see: http://emberjs.com/guides/routing/
 
 Kurkur.Router.map(function() {
-  // Root
-  this.route('index');
   // Sessions
   this.route('sign_in');
   this.resource('sessions', function() {
