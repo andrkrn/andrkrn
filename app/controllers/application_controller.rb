@@ -1,5 +1,4 @@
 class ApplicationController < ActionController::Base
-  ActionController::Parameters.permit_all_parameters = true
   
   before_filter :redirect_from_heroku
   before_filter :check_escaped_fragment

@@ -3,7 +3,7 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" 
   xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
-    <loc>http://www.andrikurnia.com</loc>
+    <loc>http://www.andrikurnia.com/</loc>
     <lastmod>2014-08-21</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.00</priority>
@@ -11,7 +11,7 @@
   <url>
     <loc>http://www.andrikurnia.com/blog</loc>
     <lastmod>2014-08-21</lastmod>
-    <changefreq>always</changefreq>
+    <changefreq>hourly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>

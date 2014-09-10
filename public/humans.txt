@@ -1,0 +1,15 @@
+/* SITE */       
+Last update: 2014/09/09                             
+Standards: HTML5, CSS3
+Components: Rails, jQuery, EmberJS, Prerender.
+Software: Sublime 3
+
+/* TEAM */
+Name: Andri Kurnia Akbaludin
+Site: http://www.andrikurnia.com
+Email: andrikurnia@live.com
+Location: Bandung, Indonesia
+Twitter: @andrkrn
+
+/* THANKS */
+Name: EmberJS, Prerender.io and for all open source projects
