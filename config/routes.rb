@@ -22,7 +22,7 @@ Kurkur::Application.routes.draw do
   end
 
   # ADMIN PANEL
-  get 'admin/index'
+  get 'admin/*path', to: 'admin#index'
 
   # TO EMBER APP
   # get '/', to: 'ember#index'

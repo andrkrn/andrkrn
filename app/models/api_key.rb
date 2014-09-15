@@ -13,7 +13,7 @@ class ApiKey < ActiveRecord::Base
 
   private
     def set_expiry_date
-      self.expired_at = self.scope == 'session' ? 2.weeks.from_now : 2.years.from_now
+      self.expired_at = self.scope == 'session' ? 2.weeks.from_now : 100.years.from_now
     end
 
     def generate_access_token

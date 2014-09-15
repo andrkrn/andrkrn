@@ -1,5 +1,7 @@
 class Api::V1::UsersController < Api::V1::ApplicationController
 
+  skip_before_filter :ensure_authenticated_user, only: [:create]
+
   def create
     user = User.create(users_params)
     if user.new_record?
