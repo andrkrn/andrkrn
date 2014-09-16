@@ -5,4 +5,10 @@ class Article < ActiveRecord::Base
 
   # Validations
   validates :title, uniqueness: true
+
+  class << self
+    def search(q, limit = 10, order = 'desc')
+      articles = Article.where("title ILIKE ? or content ILIKE ?", "%#{q}%", "%#{q}%").limit(limit.to_i).order("created_at #{order}")
+    end
+  end
 end

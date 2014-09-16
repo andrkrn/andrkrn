@@ -10,7 +10,7 @@ class Api::V1::ApplicationController < ActionController::API
 
   def allow_request_from_domain
     if Rails.env == "production"
-      if URI(request.referrer).host == "www.andrikurnia.com"
+      unless URI(request.referrer).host == "www.andrikurnia.com"
         ensure_authenticated_user
       end
     elsif Rails.env == "development"

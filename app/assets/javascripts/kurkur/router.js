@@ -6,6 +6,11 @@ Kurkur.Router.map(function() {
   this.resource('sessions', function() {
     this.route('new');
   });
+  // Registrations
+  this.route('sign_up');
+  this.resource('registrations', function() {
+    this.route('new');
+  });
   // CV
   this.route('curriculum_vitae', {path: '/cv'});
   // Articles
