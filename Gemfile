@@ -30,6 +30,9 @@ gem 'prerender_rails'
 # Server
 gem 'puma'
 
+# API Documentation
+gem 'apipie-rails'
+
 group :assets do
   gem 'sass-rails', '4.0.3'
   gem 'uglifier', '>= 1.3.0'

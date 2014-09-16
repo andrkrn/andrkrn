@@ -3,6 +3,7 @@ require 'modules/api_constraints'
 
 Kurkur::Application.routes.draw do
 
+  apipie
   resources :api_keys
 
   # devise_for :users

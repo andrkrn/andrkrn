@@ -29,6 +29,8 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    apipie-rails (0.2.6)
+      json
     arel (5.0.1.20140414130214)
     awesome_print (1.2.0)
     barber (0.4.2)
@@ -187,6 +189,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers (~> 0.8.1)
+  apipie-rails
   awesome_print
   bcrypt-ruby (~> 3.1.2)
   better_errors

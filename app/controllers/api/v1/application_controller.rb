@@ -1,16 +1,20 @@
 class Api::V1::ApplicationController < ActionController::API
 
-  # allow request from domain
+  # Allow request from domain ip
   before_filter :allow_request_from_domain
 
   # Ensure user exits
-  before_filter :ensure_authenticated_user
+  # before_filter :ensure_authenticated_user
 
   private
 
   def allow_request_from_domain
     if Rails.env == "production"
-      request.ip
+      puts "[IP] #{request.ip}"
+      unless ['104.28.4.69', '104.28.5.69'].include?(request.ip)
+        ensure_authenticated_user
+      end
+    elsif Rails.env == "development"
     end
   end
 
