@@ -12,6 +12,7 @@ class Api::V1::ApplicationController < ActionController::API
     if Rails.env == "production"
       puts "[IP] #{request.ip}"
       puts "[IP] #{request.remote_ip}"
+      puts "[IP] #{request.referrer}"
       unless ['104.28.4.69', '104.28.5.69'].include?(request.ip)
         ensure_authenticated_user
       end
