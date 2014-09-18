@@ -1,6 +1,6 @@
 Kurkur.SessionsNewRoute = Ember.Route.extend({
   renderTemplate: function() {
-    this.render({outlet: 'session'})
+    this.render({outlet: 'session'});
   },
 
   beforeModel: function(transition) {
@@ -8,7 +8,7 @@ Kurkur.SessionsNewRoute = Ember.Route.extend({
       this.transitionTo('index');
     }
   },
-  
+
   model: function() {
     return Ember.Object.create();
   },

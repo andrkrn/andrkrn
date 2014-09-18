@@ -18,8 +18,8 @@ Kurkur.Router.map(function() {
   this.resource('article', {path: '/blog/:article_id'});
   // Account
   this.resource('myaccount', {path: '/account'}, function() {
-    this.resource('articles', {path: '/articles'}, function() {
-      this.route('article', {path: '/:article_id'});
+    this.resource('account_articles', {path: '/articles'}, function() {
+      this.route('new');
     });
   });
   // 404 Not Found
