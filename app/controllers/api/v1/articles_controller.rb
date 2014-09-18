@@ -5,9 +5,9 @@ class Api::V1::ArticlesController < Api::V1::ApplicationController
 
   api :GET, '/articles'
   param :limit, :number, desc: "Total articles returned, default: 10", required: false
-  param :order, String, desc: "", required: false
+  param :order, ['desc', 'asc'], desc: "Sort articles time 'asc' or 'desc', default: 'desc'", required: false
   def index
-    render json: Article.all
+    render json: Article.order("created_at #{order_params}").limit(limit_params)
   end
   
   api :GET, '/articles/:id'
@@ -26,5 +26,9 @@ class Api::V1::ArticlesController < Api::V1::ApplicationController
   private
     def limit_params
       (params[:limit] || 10) rescue 10
+    end
+
+    def order_params
+      (params[:order] || 'desc') rescue 'desc'
     end
 end

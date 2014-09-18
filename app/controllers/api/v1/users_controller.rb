@@ -6,7 +6,7 @@ class Api::V1::UsersController < Api::V1::ApplicationController
   def create
     user = User.create(users_params)
     if user.new_record?
-      render json: { errors: user.errors.messages }, status: 422
+      render json: { errors: user.errors.map.each{|k, v| k.to_s + ' ' + v} }, status: 422
     else
       render json: user.session_api_key, status: 201
     end

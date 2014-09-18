@@ -21,7 +21,6 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Ember
 gem 'ember-rails'
 gem 'ember-source', '~> 1.6.1'
-gem 'handlebars-source', '~> 1.3.0'
 
 # SEO
 gem 'prerender_rails'

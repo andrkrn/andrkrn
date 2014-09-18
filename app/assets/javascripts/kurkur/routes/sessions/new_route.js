@@ -3,6 +3,12 @@ Kurkur.SessionsNewRoute = Ember.Route.extend({
     this.render({outlet: 'session'})
   },
 
+  beforeModel: function(transition) {
+    if (Kurkur.AuthManager.isAuthenticated()) {
+      this.transitionTo('index');
+    }
+  },
+  
   model: function() {
     return Ember.Object.create();
   },

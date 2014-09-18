@@ -16,6 +16,12 @@ Kurkur.Router.map(function() {
   // Articles
   this.resource('articles', {path: '/blog'});
   this.resource('article', {path: '/blog/:article_id'});
+  // Account
+  this.resource('myaccount', {path: '/account'}, function() {
+    this.resource('articles', {path: '/articles'}, function() {
+      this.route('article', {path: '/:article_id'});
+    });
+  });
   // 404 Not Found
   this.route("fourOhFour", { path: "/*path"});
 });

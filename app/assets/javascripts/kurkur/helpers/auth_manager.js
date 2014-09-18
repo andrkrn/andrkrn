@@ -24,7 +24,7 @@ AuthManager = Ember.Object.extend({
     });
 
     // Set the apiKey
-    this.set('apiKey', Arc9.ApiKey.create({
+    this.set('apiKey', Kurkur.ApiKey.create({
       accessToken: accessToken,
       userId: authUserid
     }));
@@ -33,7 +33,7 @@ AuthManager = Ember.Object.extend({
   // Log out the user
   reset: function() {
     this.set('apiKey', null);
-    Arc9.__container__.lookup("route:application").transitionTo('sessions.new');
+    Kurkur.__container__.lookup("route:application").transitionTo('sessions.new');
     Ember.run.sync();
     Ember.run.next(this, function(){
       $.ajaxSetup({
@@ -64,7 +64,7 @@ AuthManager = Ember.Object.extend({
 // Reset the authentication if any ember data request returns a 401 unauthorized error
 DS.rejectionHandler = function(reason) {
   if (reason.status === 401) {
-    Arc9.AuthManager.reset();
+    Kurkur.AuthManager.reset();
   }
   throw reason;
 };
