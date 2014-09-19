@@ -38,7 +38,6 @@ group :assets do
 end
 
 group :development do
-  gem 'sqlite3'
   gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
   gem 'pry-rails'
   # gem 'debugger'

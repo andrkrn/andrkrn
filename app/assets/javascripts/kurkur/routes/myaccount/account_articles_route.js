@@ -1,12 +1,7 @@
-Kurkur.AccountArticlesRoute = Ember.Route.extend({
+Kurkur.AccountArticlesRoute = Kurkur.AuthenticatedRoute.extend({
 
   renderTemplate: function() {
-    this.render({outlet: 'account'})
-  },
-
-  model: function(params) {
-  },
-
-  afterModel: function(model) {
+    this.render({outlet: 'account_sidebar'});
   }
+  
 });

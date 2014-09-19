@@ -9,5 +9,10 @@
 </div>
 
 <div class="container pt-20" style="min-height: 338px;">
-  {{outlet "account"}}
+  <div class="col-md-3">
+    {{outlet "account_sidebar"}}
+  </div>
+  <div class="col-md-9">
+    {{outlet "account"}}
+  </div>
 </div>

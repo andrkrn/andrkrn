@@ -4,7 +4,6 @@ Kurkur.AuthenticatedRoute = Ember.Route.extend({
     if (!Kurkur.AuthManager.isAuthenticated()) {
       this.redirectToLogin(transition);
     } else {
-      console.log('adasdad')
       return this.setCurrentCollaborator();
     }
   },
@@ -16,7 +15,7 @@ Kurkur.AuthenticatedRoute = Ember.Route.extend({
       // Set user
       var userId = Kurkur.AuthManager.get('apiKey.userId');
 
-      Kurkur.User.find(userId).then(function(user) {
+      that.store.find('user', userId).then(function(user) {
         Kurkur.__container__.lookup('controller:currentUser').set('content', user);
 
         resolve();

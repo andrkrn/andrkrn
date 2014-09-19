@@ -20,7 +20,7 @@ Kurkur::Application.routes.draw do
           get :search
         end
       end
-      resources :users, only: [:create]
+      resources :users
       resources :sessions, only: [:create]
     end
     match '*path' => 'errors#not_found', via: [:get, :post, :put, :patch, :delete]

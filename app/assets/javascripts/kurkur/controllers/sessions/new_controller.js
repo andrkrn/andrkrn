@@ -1,4 +1,5 @@
 Kurkur.SessionsNewController = Ember.ObjectController.extend({
+  attemptedTransition: null,
   errors: false,
   email: '',
   password: '',

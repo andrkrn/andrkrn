@@ -8,5 +8,6 @@
 //= require_tree ./components
 //= require_tree ./templates
 //= require ./router
+//= require ./routes/authenticated_route.js
 //= require_tree ./routes
 //= require_self

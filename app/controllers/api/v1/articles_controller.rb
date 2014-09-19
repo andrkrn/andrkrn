@@ -9,6 +9,15 @@ class Api::V1::ArticlesController < Api::V1::ApplicationController
   def index
     render json: Article.order("created_at #{order_params}").limit(limit_params)
   end
+
+  def create
+    article = Article.create(article_params)
+    if article.new_record?
+      render json: { errors: article.errors.map.each{|k, v| k.to_s + ' ' + v} }, status: 422
+    else
+      render json: {}, status: 201
+    end
+  end
   
   api :GET, '/articles/:id'
   param :id, :number, desc: "Article id", required: true
@@ -24,6 +33,10 @@ class Api::V1::ArticlesController < Api::V1::ApplicationController
   end
 
   private
+    def article_params
+      params.require(:article).permit(:title, :description, :article_content)
+    end
+
     def limit_params
       (params[:limit] || 10) rescue 10
     end

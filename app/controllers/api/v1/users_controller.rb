@@ -2,7 +2,13 @@ class Api::V1::UsersController < Api::V1::ApplicationController
 
   # skip_before_filter :ensure_authenticated_user, only: [:create]
 
-  api :POST, '/users/create'
+  api :GET, '/users/:id'
+  def show
+    user = User.find(params[:id])
+    render json: user
+  end
+
+  api :POST, '/users/'
   def create
     user = User.create(users_params)
     if user.new_record?

@@ -6,6 +6,8 @@ class Api::V1::ApplicationController < ActionController::API
   # Ensure user exits
   # before_filter :ensure_authenticated_user
 
+  rescue_from ActiveRecord::RecordNotFound, with: :record_not_found
+
   private
 
   def allow_request_from_domain
@@ -15,6 +17,10 @@ class Api::V1::ApplicationController < ActionController::API
       end
     elsif Rails.env == "development"
     end
+  end
+
+  def record_not_found(exception = nil)
+    render json: {:message => exception.message}, :status => :not_found
   end
 
   protected
