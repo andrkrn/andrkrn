@@ -8,7 +8,7 @@ class Api::V1::SessionsController < Api::V1::ApplicationController
     if user && user.authenticate(params[:user][:password])
       render json: user.session_api_key, status: 201
     else
-      render json: {error: 'Invalid email or password'}, status: 401
+      render json: {error: 'Invalid email or password'}, status: 422
     end
   end
 end

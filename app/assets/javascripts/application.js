@@ -11,12 +11,15 @@
 // about supported directives.
 //
 
-// Bower packages
 
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
 //= require jquery.scrollTo
+
+// Rails Assets
+//= require momentjs
+
 //= require_tree ./libs
 //= require handlebars
 //= require ember

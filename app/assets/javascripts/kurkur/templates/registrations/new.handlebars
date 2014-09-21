@@ -7,6 +7,7 @@
   <form {{action "registerUser" on="submit"}}>
     <div style="width: 400px; margin: 20px auto 40px;">
       {{#if errors}}
+        {{log errors}}
         <div class="alert alert-danger alert-dismissible">
           <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
           {{errors}}

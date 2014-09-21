@@ -15,6 +15,6 @@ Kurkur.RegistrationsNewRoute = Ember.Route.extend({
 
   setupController: function(controller) {
     controller.set('content', Ember.Object.create());
-    controller.set('errors', {});
+    controller.set('errors', false);
   }
 });

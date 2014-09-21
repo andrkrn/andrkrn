@@ -1,5 +1,5 @@
 Kurkur.RegistrationsNewController = Ember.Controller.extend({
-  errors: {},
+  errors: null,
   full_name: '',
   email: '',
   password: '',
@@ -12,7 +12,7 @@ Kurkur.RegistrationsNewController = Ember.Controller.extend({
           data = {user: properties};
 
       // Reset errors
-      that.set('errors', {});
+      that.set('errors', null);
 
       // console.log(properties);
 

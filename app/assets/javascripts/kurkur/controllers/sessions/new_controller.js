@@ -31,6 +31,10 @@ Kurkur.SessionsNewController = Ember.ObjectController.extend({
             router.transitionTo('index');
           }
         });
+      }).fail(function(jqXHR, textStatus, error) {
+        if (jqXHR.status === 422) {
+          that.set('errors', true);
+        }
       });
     }
   }

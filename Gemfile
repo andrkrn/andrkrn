@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'https://rails-assets.org'
 
 ruby '2.1.2'
 
@@ -31,6 +32,9 @@ gem 'puma'
 
 # API Documentation
 gem 'apipie-rails'
+
+# Rails Assets
+gem 'rails-assets-momentjs'
 
 group :assets do
   gem 'sass-rails', '4.0.3'
