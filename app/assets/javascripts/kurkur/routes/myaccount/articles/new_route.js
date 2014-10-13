@@ -1,4 +1,4 @@
-Kurkur.AccountArticlesNewRoute = Kurkur.AuthenticatedRoute.extend({
+Kurkur.MyaccountArticlesNewRoute = Kurkur.AuthenticatedRoute.extend({
   renderTemplate: function() {
     this.render({outlet: 'account'});
   },

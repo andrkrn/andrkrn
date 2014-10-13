@@ -6,10 +6,11 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+# Password: 123456
 User.create(
   full_name: 'Andri Kurnia',
   email: 'me@andrikurnia.com',
-  password_digest: "$2a$10$wJTPdvpGgzDvkXChrcPyqOQrFFawzGu89B1rZze/lVIcJKWiNeAqS"
+  password_digest: "$2a$10$eehFR.ibKdKtylQ546dcregDpcnqVdvz82AlZpBHuNLCgRY9EMXW6"
 )
 Article.create([
   {

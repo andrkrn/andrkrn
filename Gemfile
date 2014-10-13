@@ -13,6 +13,8 @@ gem "jquery-scrollto-rails"
 gem 'jquery-rails'
 gem 'bcrypt-ruby', '~> 3.1.2'
 gem 'slim'
+gem 'sass-rails', '4.0.3'
+gem 'uglifier', '>= 1.3.0'
 # gem 'devise'
 
 gem 'jbuilder', '~> 2.0'
@@ -36,9 +38,9 @@ gem 'apipie-rails'
 # Rails Assets
 gem 'rails-assets-momentjs'
 
-group :assets do
-  gem 'sass-rails', '4.0.3'
-  gem 'uglifier', '>= 1.3.0'
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0.0'
+  gem 'guard-rspec'
 end
 
 group :development do

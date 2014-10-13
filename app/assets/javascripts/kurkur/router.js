@@ -18,7 +18,7 @@ Kurkur.Router.map(function() {
   this.resource('article', {path: '/blog/:article_id'});
   // Account
   this.resource('myaccount', {path: '/account'}, function() {
-    this.resource('account_articles', {path: '/articles'}, function() {
+    this.resource('myaccount.articles', {path: '/articles'}, function() {
       this.route('new');
     });
   });

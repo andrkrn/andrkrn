@@ -38,4 +38,8 @@ Rails.application.configure do
   # Ember
   config.ember.variant = :development
   config.handlebars.templates_root = 'kurkur/templates'
+
+  config.action_dispatch.default_headers = {
+    'X-Frame-Options' => 'ALLOWALL'
+  }
 end

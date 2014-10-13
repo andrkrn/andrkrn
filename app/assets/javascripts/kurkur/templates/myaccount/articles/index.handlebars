@@ -1,0 +1,19 @@
+<table class="table table-bordered table-hover">
+  <tr>
+    <th class="text-center" width="80px">#</th>
+    <th class="text-center">Title</th>
+    <th class="text-center" colspan="2">Action</th>
+  </tr>
+  {{#each model}}
+    <tr>
+      <td class="text-center">{{id}}</td>
+      <td>{{title}}</td>
+      <td class="text-center" width="50px">
+        {{#link-to ''}}
+          <i class="fa fa-edit"></i>
+        {{/link-to}}
+      </td>
+      <td class="text-center" width="50px"><a {{action 'showConfirmation'}}><i class="fa fa-archive"></i></a></td>
+    </tr>
+  {{/each}}
+</table>

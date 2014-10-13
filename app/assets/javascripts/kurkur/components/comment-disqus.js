@@ -22,7 +22,6 @@ Kurkur.CommentDisqusComponent = Em.Component.extend({
     var title = controller.get('title');
  
     window.disqus_title = title;
-    console.log("what the fuck off one")
  
     if (!window.DISQUS) {
       var disqusShortname = Kurkur.DisqusOptions.get('shortname');
