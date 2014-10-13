@@ -15,26 +15,31 @@ Article.create([
   {
     title: 'Article One',
     user_id: 1,
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisl nisi, vehicula a imperdiet eu, pretium et magna. Curabitur sodales erat nibh, eu imperdiet dolor lacinia nec. Maecenas ac lacus laoreet, dapibus dui non, vestibulum enim. Curabitur ac egestas lorem. Vestibulum ut nisi sed enim vehicula venenatis. Vivamus scelerisque bibendum odio, et porttitor diam. Curabitur dui tortor, gravida vitae pretium et, adipiscing ac est. Nullam sit amet malesuada nisi. Nulla molestie rhoncus ante, in cursus dui posuere sit amet. Nullam commodo nec lorem non volutpat. Vivamus bibendum interdum libero ut fringilla.'    
+    article_content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisl nisi, vehicula a imperdiet eu, pretium et magna. Curabitur sodales erat nibh, eu imperdiet dolor lacinia nec. Maecenas ac lacus laoreet, dapibus dui non, vestibulum enim. Curabitur ac egestas lorem. Vestibulum ut nisi sed enim vehicula venenatis. Vivamus scelerisque bibendum odio, et porttitor diam. Curabitur dui tortor, gravida vitae pretium et, adipiscing ac est. Nullam sit amet malesuada nisi. Nulla molestie rhoncus ante, in cursus dui posuere sit amet. Nullam commodo nec lorem non volutpat. Vivamus bibendum interdum libero ut fringilla.',
+    description: 'Article Lorem 1',
   },
   {
     title: 'Article Two',
     user_id: 1,
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisl nisi, vehicula a imperdiet eu, pretium et magna. Curabitur sodales erat nibh, eu imperdiet dolor lacinia nec. Maecenas ac lacus laoreet, dapibus dui non, vestibulum enim. Curabitur ac egestas lorem. Vestibulum ut nisi sed enim vehicula venenatis. Vivamus scelerisque bibendum odio, et porttitor diam. Curabitur dui tortor, gravida vitae pretium et, adipiscing ac est. Nullam sit amet malesuada nisi. Nulla molestie rhoncus ante, in cursus dui posuere sit amet. Nullam commodo nec lorem non volutpat. Vivamus bibendum interdum libero ut fringilla.'    
+    article_content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisl nisi, vehicula a imperdiet eu, pretium et magna. Curabitur sodales erat nibh, eu imperdiet dolor lacinia nec. Maecenas ac lacus laoreet, dapibus dui non, vestibulum enim. Curabitur ac egestas lorem. Vestibulum ut nisi sed enim vehicula venenatis. Vivamus scelerisque bibendum odio, et porttitor diam. Curabitur dui tortor, gravida vitae pretium et, adipiscing ac est. Nullam sit amet malesuada nisi. Nulla molestie rhoncus ante, in cursus dui posuere sit amet. Nullam commodo nec lorem non volutpat. Vivamus bibendum interdum libero ut fringilla.',
+    description: 'Article Lorem 2',
   },
   {
     title: 'Article Three',
     user_id: 1,
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisl nisi, vehicula a imperdiet eu, pretium et magna. Curabitur sodales erat nibh, eu imperdiet dolor lacinia nec. Maecenas ac lacus laoreet, dapibus dui non, vestibulum enim. Curabitur ac egestas lorem. Vestibulum ut nisi sed enim vehicula venenatis. Vivamus scelerisque bibendum odio, et porttitor diam. Curabitur dui tortor, gravida vitae pretium et, adipiscing ac est. Nullam sit amet malesuada nisi. Nulla molestie rhoncus ante, in cursus dui posuere sit amet. Nullam commodo nec lorem non volutpat. Vivamus bibendum interdum libero ut fringilla.'    
+    article_content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisl nisi, vehicula a imperdiet eu, pretium et magna. Curabitur sodales erat nibh, eu imperdiet dolor lacinia nec. Maecenas ac lacus laoreet, dapibus dui non, vestibulum enim. Curabitur ac egestas lorem. Vestibulum ut nisi sed enim vehicula venenatis. Vivamus scelerisque bibendum odio, et porttitor diam. Curabitur dui tortor, gravida vitae pretium et, adipiscing ac est. Nullam sit amet malesuada nisi. Nulla molestie rhoncus ante, in cursus dui posuere sit amet. Nullam commodo nec lorem non volutpat. Vivamus bibendum interdum libero ut fringilla.',
+    description: 'Article Lorem 3',
   },
   {
     title: 'Article Four',
     user_id: 1,
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisl nisi, vehicula a imperdiet eu, pretium et magna. Curabitur sodales erat nibh, eu imperdiet dolor lacinia nec. Maecenas ac lacus laoreet, dapibus dui non, vestibulum enim. Curabitur ac egestas lorem. Vestibulum ut nisi sed enim vehicula venenatis. Vivamus scelerisque bibendum odio, et porttitor diam. Curabitur dui tortor, gravida vitae pretium et, adipiscing ac est. Nullam sit amet malesuada nisi. Nulla molestie rhoncus ante, in cursus dui posuere sit amet. Nullam commodo nec lorem non volutpat. Vivamus bibendum interdum libero ut fringilla.'    
+    article_content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisl nisi, vehicula a imperdiet eu, pretium et magna. Curabitur sodales erat nibh, eu imperdiet dolor lacinia nec. Maecenas ac lacus laoreet, dapibus dui non, vestibulum enim. Curabitur ac egestas lorem. Vestibulum ut nisi sed enim vehicula venenatis. Vivamus scelerisque bibendum odio, et porttitor diam. Curabitur dui tortor, gravida vitae pretium et, adipiscing ac est. Nullam sit amet malesuada nisi. Nulla molestie rhoncus ante, in cursus dui posuere sit amet. Nullam commodo nec lorem non volutpat. Vivamus bibendum interdum libero ut fringilla.',
+    description: 'Article Lorem 4',
   },
   {
     title: 'Article Five',
     user_id: 1,
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisl nisi, vehicula a imperdiet eu, pretium et magna. Curabitur sodales erat nibh, eu imperdiet dolor lacinia nec. Maecenas ac lacus laoreet, dapibus dui non, vestibulum enim. Curabitur ac egestas lorem. Vestibulum ut nisi sed enim vehicula venenatis. Vivamus scelerisque bibendum odio, et porttitor diam. Curabitur dui tortor, gravida vitae pretium et, adipiscing ac est. Nullam sit amet malesuada nisi. Nulla molestie rhoncus ante, in cursus dui posuere sit amet. Nullam commodo nec lorem non volutpat. Vivamus bibendum interdum libero ut fringilla.'  
+    article_content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisl nisi, vehicula a imperdiet eu, pretium et magna. Curabitur sodales erat nibh, eu imperdiet dolor lacinia nec. Maecenas ac lacus laoreet, dapibus dui non, vestibulum enim. Curabitur ac egestas lorem. Vestibulum ut nisi sed enim vehicula venenatis. Vivamus scelerisque bibendum odio, et porttitor diam. Curabitur dui tortor, gravida vitae pretium et, adipiscing ac est. Nullam sit amet malesuada nisi. Nulla molestie rhoncus ante, in cursus dui posuere sit amet. Nullam commodo nec lorem non volutpat. Vivamus bibendum interdum libero ut fringilla.',
+    description: 'Article Lorem 5',
   }
 ])

@@ -12,7 +12,7 @@ Kurkur.DisqusOptions = Em.Object.create({
 View to show comments for the related blog post and/or page
 */
  
-Kurkur.DisqusCommentsComponent = Em.Component.extend({
+Kurkur.CommentDisqusComponent = Em.Component.extend({
   elementId: 'disqus_thread',
   classNames: ['comments'],
   timer: null,
@@ -28,14 +28,10 @@ Kurkur.DisqusCommentsComponent = Em.Component.extend({
       var disqusShortname = Kurkur.DisqusOptions.get('shortname');
  
       window.disqus_shortname = disqusShortname;
-      console.log("what the fuck one")
       /* * * DON'T EDIT BELOW THIS LINE * * */
-      (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqusShortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-      console.log("what the fuck")
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqusShortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     }
  
   }.on('didInsertElement'),
@@ -63,45 +59,4 @@ Kurkur.DisqusCommentsComponent = Em.Component.extend({
       });
     });
   },
-});
- 
-/**
-Load Disqus comment count to add to each post preview
-*/
- 
-Kurkur.DisqusCommentCount = Em.Mixin.create({
- 
-  setupCommentCount: function() {
-    var disqusShortname = Kurkur.DisqusOptions.get('shortname');
- 
-    window.disqus_shortname = disqusShortname;
- 
-    Em.run.later(this, function() {
-      /* * * DON'T EDIT BELOW THIS LINE * * */
-      var s = document.createElement('script'); s.async = true;
-      s.type = 'text/javascript';
-      s.src = '//' + disqusShortname + '.disqus.com/count.js';
-      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }, 1000)
-  }.on('didInsertElement'),
-});
- 
-Kurkur.ArticleView.reopen(
-  Kurkur.DisqusCommentsComponent, {
- 
-});
- 
-Em.LinkView.reopen({
- 
-  addDisqusTag: function() {
-    var commentCount = this.get('commentCount');
- 
-    if (commentCount) {
-      var isLinkToPost = this.get('isLinkToPost');
-      var href = this.get('href');
-      var disqusTag = '#disqus_thread';
- 
-      this.set('href', href + disqusTag);
-    }
-  }.on('willInsertElement'),
 });
