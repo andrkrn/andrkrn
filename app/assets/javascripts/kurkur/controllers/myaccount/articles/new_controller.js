@@ -9,7 +9,6 @@ Kurkur.MyaccountArticlesNewController = Ember.ObjectController.extend(Kurkur.Cur
       var that = this,
           properties = that.getProperties('title', 'description', 'article_content');
 
-      console.log(properties);
       var article = that.store.createRecord('article', properties);
       article.save().then(function() {
         that.setProperties({
@@ -17,8 +16,7 @@ Kurkur.MyaccountArticlesNewController = Ember.ObjectController.extend(Kurkur.Cur
           description: '',
           article_content: ''
         });
-      }, function() {
-        console.log('failed');
+        that.get('target').transitionTo('myaccount.articles.index');
       });
     }
   }

@@ -15,7 +15,7 @@ class Api::V1::ArticlesController < Api::V1::ApplicationController
     if article.new_record?
       render json: { errors: article.errors.map.each{|k, v| k.to_s + ' ' + v} }, status: 422
     else
-      render json: {}, status: 201
+      render json: article, status: 201
     end
   end
   

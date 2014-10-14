@@ -4,6 +4,6 @@ Kurkur.MyaccountArticlesNewRoute = Kurkur.AuthenticatedRoute.extend({
   },
 
   model: function() {
-    return Ember.Object.create();
+    return this.store.createRecord('article');
   }
 });

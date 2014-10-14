@@ -23,7 +23,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Ember
 gem 'ember-rails'
-gem 'ember-source', '~> 1.6.1'
+gem 'ember-source', '~> 1.7.0'
 
 # SEO
 gem 'prerender_rails'

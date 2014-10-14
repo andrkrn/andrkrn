@@ -4,10 +4,10 @@
     <th class="text-center">Title</th>
     <th class="text-center" colspan="2">Action</th>
   </tr>
-  {{#each model}}
+  {{#each article in filteredContent}}
     <tr>
-      <td class="text-center">{{id}}</td>
-      <td>{{title}}</td>
+      <td class="text-center">{{article.id}}</td>
+      <td>{{article.title}}</td>
       <td class="text-center" width="50px">
         {{#link-to ''}}
           <i class="fa fa-edit"></i>
