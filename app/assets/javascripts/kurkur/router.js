@@ -20,6 +20,7 @@ Kurkur.Router.map(function() {
   this.resource('myaccount', {path: '/account'}, function() {
     this.resource('myaccount.articles', {path: '/articles'}, function() {
       this.route('new');
+      this.route('edit', {path: '/:id/edit'});
     });
   });
   // 404 Not Found

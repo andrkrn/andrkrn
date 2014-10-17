@@ -25,6 +25,17 @@ class Api::V1::ArticlesController < Api::V1::ApplicationController
     render json: Article.find(params[:id])
   end
 
+  api :PUT, '/articles/:id'
+  param :id, :number, desc: "Article id", required: true
+  def update
+    article = Article.find(params[:id])
+    if article.update_attributes(article_params)
+      render json: article
+    else
+      render json: {error: article.errors}, status: 422
+    end
+  end
+
   api :GET, '/articles/search'
   param :q, String, desc: "Query for search articles", required: true
   param :limit, :number, desc: "Total articles returned, default: 10", required: false

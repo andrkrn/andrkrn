@@ -9,7 +9,7 @@
       <td class="text-center">{{article.id}}</td>
       <td>{{article.title}}</td>
       <td class="text-center" width="50px">
-        {{#link-to ''}}
+        {{#link-to 'myaccount.articles.edit' article.id}}
           <i class="fa fa-edit"></i>
         {{/link-to}}
       </td>
